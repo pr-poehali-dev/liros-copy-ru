@@ -68,6 +68,7 @@ const Index = () => {
             <div className="hidden md:flex space-x-8">
               <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Услуги</a>
               <a href="#about" className="text-gray-600 hover:text-primary transition-colors">О компании</a>
+              <a href="#gallery" className="text-gray-600 hover:text-primary transition-colors">Производство</a>
               <a href="#portfolio" className="text-gray-600 hover:text-primary transition-colors">Портфолио</a>
               <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Контакты</a>
             </div>
@@ -202,6 +203,120 @@ const Index = () => {
                 className="rounded-2xl shadow-xl"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-4 bg-slate-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-secondary mb-4">Наше производство</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Современные производственные мощности и высокотехнологичное оборудование
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="space-y-6">
+              <Card className="overflow-hidden hover-scale border-0 shadow-lg">
+                <div className="relative">
+                  <img 
+                    src="/img/ab0f84a4-1102-42dd-9f5e-9caa8fea646a.jpg" 
+                    alt="Производственный цех" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-lg font-semibold">Основной производственный цех</h3>
+                    <p className="text-sm opacity-90">Автоматизированные линии производства</p>
+                  </div>
+                </div>
+              </Card>
+              
+              <Card className="overflow-hidden hover-scale border-0 shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                      <Icon name="Factory" className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Площадь производства</h4>
+                      <p className="text-gray-600">12,000 м²</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="space-y-6">
+              <Card className="overflow-hidden hover-scale border-0 shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                      <Icon name="Users" className="w-5 h-5 text-green-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Команда специалистов</h4>
+                      <p className="text-gray-600">180+ сотрудников</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="overflow-hidden hover-scale border-0 shadow-lg">
+                <div className="relative">
+                  <img 
+                    src="/img/a19d0d00-549b-4573-89e1-9fd6cb24f5d8.jpg" 
+                    alt="Высокотехнологичное оборудование" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-lg font-semibold">Прецизионное оборудование</h3>
+                    <p className="text-sm opacity-90">CNC станки и робототехника</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+            
+            <div className="space-y-6">
+              <Card className="overflow-hidden hover-scale border-0 shadow-lg">
+                <div className="relative">
+                  <img 
+                    src="/img/e23e1348-24a3-4e5c-9797-dcc3018ab64c.jpg" 
+                    alt="Складские помещения" 
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="text-lg font-semibold">Логистический центр</h3>
+                    <p className="text-sm opacity-90">Автоматизированная система хранения</p>
+                  </div>
+                </div>
+              </Card>
+              
+              <Card className="overflow-hidden hover-scale border-0 shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <Icon name="Award" className="w-5 h-5 text-blue-600" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold">Сертификация качества</h4>
+                      <p className="text-gray-600">ISO 9001:2015</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button size="lg" variant="outline" className="hover-scale">
+              <Icon name="Eye" className="w-5 h-5 mr-2" />
+              Посмотреть виртуальный тур
+            </Button>
           </div>
         </div>
       </section>
