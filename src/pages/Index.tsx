@@ -284,6 +284,61 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              
+              {/* Interactive Map */}
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4">Наше расположение</h3>
+                <div className="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg h-64">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A64b4038d90884dc3dc1a8e40c9e5ff70f9acf4bcd0bfbe0b5a4db9d9c06e57e2&amp;source=constructor"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    className="border-0"
+                    title="Карта офиса ЛИРОС"
+                  ></iframe>
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg p-3 shadow-lg">
+                    <div className="flex items-center space-x-2">
+                      <Icon name="MapPin" className="w-5 h-5 text-primary" />
+                      <div>
+                        <div className="font-semibold text-sm">ЛИРОС</div>
+                        <div className="text-xs text-gray-600">ул. Промышленная, 15</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Map Info Cards */}
+                <div className="grid md:grid-cols-2 gap-4 mt-4">
+                  <Card className="border-0 shadow-md">
+                    <CardContent className="p-4">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                          <Icon name="Car" className="w-5 h-5 text-green-600" />
+                        </div>
+                        <div>
+                          <div className="font-semibold">Удобная парковка</div>
+                          <div className="text-sm text-gray-600">Бесплатная парковка для клиентов</div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="border-0 shadow-md">
+                    <CardContent className="p-4">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                          <Icon name="Train" className="w-5 h-5 text-blue-600" />
+                        </div>
+                        <div>
+                          <div className="font-semibold">Транспорт</div>
+                          <div className="text-sm text-gray-600">5 мин пешком от метро</div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
             </div>
             
             <Card className="shadow-xl">
